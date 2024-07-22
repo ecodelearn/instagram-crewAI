@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "instagram_crewai/"
+version = "0.1.0"
+description = "instagram-crewAI/ using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.41.1" }
+
+[tool.poetry.scripts]
+instagram_crewai/ = "instagram_crewai/.main:run"
+train = "instagram_crewai/.main:train"
+replay = "instagram_crewai/.main:replay"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
