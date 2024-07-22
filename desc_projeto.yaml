@@ -1,0 +1,105 @@
+user_inputs:
+  - IG page description
+  - Topic of the week
+
+tasks:
+  - name: Market Research
+    description: Research relevant trends related to the topic of the week
+    output: 
+      - report with findings
+      - save to file
+
+  - name: Create content calendar
+    description: Design a content plan with hashtags, title, publishing time...
+    output:
+      - week's content calendar
+      - save to file
+
+  - name: Copy writing
+    description: Write the post description for each week's post
+    output:
+      - each day's post description
+      - save to file
+
+  - name: Create Image Descriptions
+    description: Write image descriptions to generate AI images
+    output:
+      - a description for each post of the week given the calendar
+
+  - name: Compile content for the week
+    description: Compile all the work and create a single week's plan
+    output:
+      - a document with the complete plan and content
+
+content_strategy: Content Strategy for the Week
+
+agents:
+  - Market Researcher
+  - Content Strategist
+  - Copy Writer
+  - Visual Artist
+
+tools:
+  search_toolset:
+    - action: search internet
+      return: 5 results (str)
+    - action: search Instagram
+      return: 5 results (str)
+    - action: open page
+      return: page content (str)
+
+
+user_inputs:
+  - Descrição da página do IG
+  - Tópico da semana
+
+tasks:
+  - name: Pesquisa de Mercado
+    description: Pesquisar tendências relevantes relacionadas ao tópico da semana
+    output: 
+      - relatório com resultados
+      - salvar em arquivo
+
+  - name: Criar calendário de conteúdo
+    description: Projetar um plano de conteúdo com hashtags, título, horário de publicação...
+    output:
+      - calendário de conteúdo da semana
+      - salvar em arquivo
+
+  - name: Redação
+    description: Escrever a descrição da postagem para cada postagem da semana
+    output:
+      - descrição de cada dia da postagem
+      - salvar em arquivo
+
+  - name: Criar descrições de imagens
+    description: Escrever descrições de imagens para gerar imagens de IA
+    output:
+      - uma descrição para cada postagem da semana conforme o calendário
+
+  - name: Compilar conteúdo da semana
+    description: Compilar todo o trabalho e criar o plano de uma semana
+    output:
+      - um documento com o plano completo e conteúdo
+
+content_strategy: Estratégia de Conteúdo para a Semana
+
+agents:
+  - Market Researcher
+  - Content Strategist
+  - Copy Writer
+  - Visual Artist
+
+tools:
+  search_toolset:
+    - action: pesquisar na internet
+      return: 5 resultados (str)
+    - action: pesquisar no Instagram
+      return: 5 resultados (str)
+    - action: abrir página
+      return: conteúdo da página (str)
+
+
+
+
+
